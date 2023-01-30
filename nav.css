@@ -1,0 +1,136 @@
+
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    height: auto;
+}
+
+.hidden{
+    opacity: 0;
+    transition: 0.5s;
+    animation: ease-in-out;
+}
+
+.navbarWrapper{
+    background-color: #1A1C20;
+    width: 60px;
+    height: 1000px;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navbarTop{
+    overflow: hidden;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.navbarMid{
+    overflow: hidden;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.navbarBottom{
+    overflow: hidden;
+}
+
+.iconHolder{
+    height: 35px;
+    width: 35px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: larger;
+    color: wheat;
+}
+
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+  }
+
+  .barHolder{
+    padding-left: 12.5px;
+    padding-right: 12.5px;
+    width: 35px;
+    height: 60px;
+    display: flex;
+    font-size: larger;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+    transition: 0.5s;
+    animation: ease-in-out;
+  }
+  
+  .bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  .bar1{
+    width: 10px;
+  }
+
+  .bar3{
+    width: 24px;
+  }
+  
+  .change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+    width: 35px;
+    background-color: rgb(214, 213, 213);
+  }
+  
+  .change .bar2 {opacity: 0;}
+  
+  .change .bar3 {
+    transform: translate(0, -14px) rotate(45deg);
+    width: 35px;
+    background-color: rgb(231, 228, 228);
+  }
+
+  .change .hidden{
+    opacity: 100;
+  }
+
+  .change  .barHolder {
+    background-color: #1A1C20;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .change  .barHolder {
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    font-size: larger;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1A1C20;
+  }
